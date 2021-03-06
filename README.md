@@ -1,4 +1,4 @@
-# ![](https://raw.githubusercontent.com/Minejaj/qamenu/main/github/icon.png) QAMenu - Quick Access/Action Menu.
+# ![](https://raw.githubusercontent.com/Minejaj/qamenu/main/github/icon2.png) QAMenu - Quick Access/Action Menu.
 Cool way to manage your PC.
 
 # How to install
