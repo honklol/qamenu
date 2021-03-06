@@ -1,10 +1,10 @@
 # ![](https://raw.githubusercontent.com/Minejaj/qamenu/main/github/icon32.png) QAMenu - Quick Access/Action Menu.
-Cool way to manage your PC.
+A cooler way to manage your PC.
 
-# How to install
+# How to install QAMenu
 Open a terminal window, type in `sudo curl -O https://raw.githubusercontent.com/Minejaj/qamenu/main/qamenu-install.sh && sudo chmod +x qamenu-install.sh && ./qamenu-install.sh` and follow the instructions on the screen.
 
-# How to uninstall
+# How to uninstall QAMenu
 Open a terminal window, type in `sudo qamenu-remove` and follow the instructions on the screen.
 
 # Sources
