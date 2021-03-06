@@ -1,0 +1,32 @@
+#!/bin/bash
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [INFO] Installing QAMenu, please wait..."
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [INFO] Installing dependencies... [1/4]"
+sudo apt -y -q install curl dialog > /dev/null
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [INFO] Downloading QAMenu... [2/4]"
+cd /tmp/qamenu
+sudo curl -Ss -O http://qamenu-downloads.minejaj.cloud:20084/builds/release/1/pwract/qamenu
+sudo curl -Ss -O http://qamenu-downloads.minejaj.cloud:20084/builds/release/uninstaller/qamenu-remove
+sudo curl -Ss -O http://qamenu-downloads.minejaj.cloud:20084/builds/release/uninstaller/qamenu-uninstall
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [INFO] Installing QAMenu... [3/4]"
+mv qamenu /bin
+mv qamenu-remove /bin
+mv qamenu-uninstall /bin
+cd /bin
+sudo chmod +x qamenu
+sudo chmod +x qamenu-remove
+sudo chmod +x qamenu-uninstall
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [INFO] Adding QAMenu to PATH... [4/4]"
+export PATH=$PATH:~/bin
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU INSTALLER] [$timestamp] [SUCCESS] QAMenu has been successfully installed!"
