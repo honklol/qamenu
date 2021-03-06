@@ -8,6 +8,10 @@ Open a terminal window, type in `sudo curl -O https://raw.githubusercontent.com/
 Open a terminal window, type in `sudo qamenu-remove` and follow the instructions on the screen.
 
 # Screenshots
-uploading
+![Power actions only](https://raw.githubusercontent.com/Minejaj/qamenu/main/ss1.png)
+![Task managers only](https://raw.githubusercontent.com/Minejaj/qamenu/main/ss2.png)
+![Power actions and task managers](https://raw.githubusercontent.com/Minejaj/qamenu/main/ss3.png)
+
+
 <br><br><br><br>
 ### Made by honk#9930
