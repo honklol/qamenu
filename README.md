@@ -7,6 +7,9 @@ Open a terminal window, type in `sudo curl -O https://raw.githubusercontent.com/
 # How to uninstall
 Open a terminal window, type in `sudo qamenu-remove` and follow the instructions on the screen.
 
+# Sources
+[htop](https://github.com/htop-dev/htop), [glances](https://github.com/nicolargo/glances), [bpytop](https://github.com/aristocratos/bpytop)
+
 # Screenshots
 ![Power actions only](https://raw.githubusercontent.com/Minejaj/qamenu/main/ss1.png)
 ![Task managers only](https://raw.githubusercontent.com/Minejaj/qamenu/main/ss2.png)
