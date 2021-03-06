@@ -1,0 +1,10 @@
+#!/bin/bash
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU UNINSTALLER] [$timestamp] [INFO] Preparing the uninstaller, please wait..."
+
+sudo mkdir -p /tmp/qamenu
+cd /tmp/qamenu
+curl -Ss -O http://qamenu-downloads.minejaj.cloud:20084/builds/release/uninstaller/qamenu-remover
+sudo chmod +x qamenu-remover
+./qamenu-remover

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU UNINSTALLER] [$timestamp] [INFO] Skipping dependency remove."
+
+cd /bin
+sudo rm qamenu
+sudo rm qamenu-remove
+sudo rm qamenu-uninstall
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU UNINSTALLER] [$timestamp] [INFO] Finished uninstalling."

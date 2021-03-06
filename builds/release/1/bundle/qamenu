@@ -1,0 +1,45 @@
+#!/bin/bash
+
+HEIGHT=15
+WIDTH=40
+CHOICE_HEIGHT=6
+BACKTITLE="QAMenu - Quick Action Menu"
+TITLE="Choose action"
+MENU="Choose one of the following options:"
+
+OPTIONS=(1 "Shutdown PC"
+         2 "Restart PC"
+         3 "Suspend PC"
+         4 "Open htop"
+         5 "Open glances"
+         6 "Open bpytop")
+
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+
+clear
+case $CHOICE in
+        1)
+            shutdown now
+            ;;
+        2)
+            shutdown --reboot now
+            ;;
+        3)
+            shutdown --halt
+            ;;
+        4)
+            htop
+            ;;
+        5)
+            glances
+            ;;
+        6)
+            sudo bpytop
+            ;;
+esac

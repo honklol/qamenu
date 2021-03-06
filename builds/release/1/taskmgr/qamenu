@@ -1,0 +1,33 @@
+#!/bin/bash
+
+HEIGHT=10
+WIDTH=40
+CHOICE_HEIGHT=3
+BACKTITLE="QAMenu - Quick Action Menu"
+TITLE="Choose action"
+MENU="Choose one of the following options:"
+
+OPTIONS=(1 "Open htop"
+         2 "Open glances"
+         3 "Open bpytop")
+
+CHOICE=$(dialog --clear \
+                --backtitle "$BACKTITLE" \
+                --title "$TITLE" \
+                --menu "$MENU" \
+                $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                "${OPTIONS[@]}" \
+                2>&1 >/dev/tty)
+
+clear
+case $CHOICE in
+        1)
+            htop
+            ;;
+        2)
+            glances
+            ;;
+        3)
+            sudo bpytop
+            ;;
+esac

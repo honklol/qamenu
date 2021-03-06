@@ -1,0 +1,14 @@
+#!/bin/bash
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU UNINSTALLER] [$timestamp] [INFO] Keeping basic dependencies."
+
+sudo apt -y -qq remove glances > /dev/null
+sudo snap remove bpytop
+cd /bin
+sudo rm qamenu
+sudo rm qamenu-remove
+sudo rm qamenu-uninstall
+
+timestamp=$(date +%H:%M:%S)
+echo "[QAMENU UNINSTALLER] [$timestamp] [INFO] Finished uninstalling."
