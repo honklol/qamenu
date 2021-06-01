@@ -2,7 +2,7 @@
 A cooler way to manage your PC.
 
 # How to install QAMenu
-Open a terminal window, type in `sudo curl -O https://raw.githubusercontent.com/Minejaj/qamenu/main/qamenu.sh && sudo chmod +x qamenu.sh && ./qamenu.sh` and follow the instructions on the screen.
+Open a terminal window, type in `wget https://raw.githubusercontent.com/Minejaj/qamenu/main/qamenu.sh && sudo chmod +x qamenu.sh && ./qamenu.sh` and follow the instructions on the screen.
 
 # How to uninstall QAMenu
 Open a terminal window, type in `sudo qamenu-remove` and follow the instructions on the screen.
